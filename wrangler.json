@@ -1,0 +1,30 @@
+{
+  "name": "blue-firefly-930e",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "blue-firefly-930e-d1",
+      "database_id": "5d44ecd8-de76-49bf-ad29-54af2a356670"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "blue-firefly-930e-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
